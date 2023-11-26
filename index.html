@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lupesh kumar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #120534;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #0c1048;
+        height: 60px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: #51525d;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 0;
+        align-items: center;
+      }
+
+      .leftsection {
+        font-size: 2.5rem;
+        margin-left: 80px;
+      }
+      .leftsection .btn {
+        padding: 12px;
+        background: #0c1048;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        margin: 30px 5px;
+        cursor: pointer;
+      }
+      .leftsection .btn:hover {
+        color: #000000;
+        background: #e9e2e2;
+      }
+      .purple {
+        color: blue;
+      }
+
+      #element {
+        color: rgb(173, 191, 16);
+      }
+      main hr {
+        margin: 30px 50px;
+      }
+      main h1 {
+        margin: 5px 66px;
+      }
+      .secondsection {
+        margin-top: 40px;
+        display: flex;
+        height: 250px;
+        justify-content: space-around;
+      }
+      .secondsection img {
+        width: 200px;
+        border-radius: 5px;
+      }
+      .secondsection .vertical {
+        margin: 20px 50px;
+      }
+      .secondsection img,
+      .vertical:hover {
+        color: rgb(71, 85, 97);
+        cursor: pointer;
+      }
+
+      #footer {
+        background-color: #111052;
+      }
+      .footer-distributed {
+        background:  #200253;
+        box-shadow: 0 1px 1px 0 rgba(220, 11, 11, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: bold 16px sans-serif;
+        padding: 55px 50px;
+      }
+
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+     
+
+      .footer-distributed .footer-left {
+        width: 40%;
+      }
+
+
+
+      .footer-distributed h3 {
+        color: #ffffff;
+      font-size: 2rem;
+        margin: 0;
+      }
+
+      .footer-distributed h3 span {
+        color: rgb(255, 255, 255);
+      }
+
+    
+
+      .footer-distributed .footer-links {
+        color: #ffffff;
+        margin: 20px 0 12px;
+        padding: 0;
+      }
+
+      .footer-distributed .footer-links a {
+        display: inline-block;
+        line-height: 1.8;
+        font-weight: 400;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .footer-distributed .footer-company-name {
+        color: #607c0c;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+      }
+
+   
+
+      .footer-distributed .footer-center {
+        width: 35%;
+      }
+
+      .footer-distributed .footer-center i {
+        background-color: #e05809;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+      }
+
+      .footer-distributed .footer-center i.fa-envelope {
+        font-size: 17px;
+        line-height: 38px;
+      }
+
+      .footer-distributed .footer-center p {
+        display: inline-block;
+        color: #ffffff;
+        font-weight: 400;
+        vertical-align: middle;
+        margin: 0;
+      }
+
+      .footer-distributed .footer-center p span {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 2;
+      }
+
+      .footer-distributed .footer-center p a {
+        color: rgb(134, 143, 9);
+        text-decoration: none;
+      }
+
+      .footer-distributed .footer-links a:before {
+        content: "|";
+        font-weight: 300;
+        font-size: 20px;
+        left: 0;
+        color: #fff;
+        display: inline-block;
+        padding-right: 5px;
+      }
+
+      .footer-distributed .footer-links .link-1:before {
+        content: none;
+      }
+
+     
+
+      .footer-distributed .footer-right {
+        width: 20%;
+      }
+
+      .footer-distributed .footer-company-about {
+        line-height: 20px;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+      }
+
+      .footer-distributed .footer-company-about span {
+        display: block;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .footer-distributed .footer-icons {
+        margin-top: 30px;
+      }
+
+      .footer-distributed .footer-icons a {
+        display: inline;
+
+        cursor: pointer;
+
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+
+        margin-right: 3px;
+        margin-bottom: 5px;
+      }
+      .footer-distributed .footer-icons img {
+        border-radius: 55PX;
+        border: #fff;
+        border-style: solid;
+        border-width: 2px;
+        margin: 0 1px;
+        
+      }
+      .footer-distributed .footer-icons {
+      height: 2px;
+      }
+
+      @media (max-width: 880px) {
+        .footer-distributed {
+          font: bold 14px sans-serif;
+        }
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+
+        .footer-distributed .footer-center i {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Lupesh kumar</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, my name is <span class="purple">Lupesh</span>
+          <div>and I am a</div>
+
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection"></div>
+        <img src="lupesh.png" alt="" />
+      </section>
+      <hr />
+      <u><h1>My Projects</h1></u>
+      <section class="secondsection">
+        <div class="box1">
+          <img src="govtexam.png" alt="" />
+          <div class="vertical">Govtexam.Online</div>
+        </div>
+        <div class="box2">
+          <img src="registration.png" alt="" />
+          <div class="vertical">Registration</div>
+        </div>
+        <div class="box3">
+          <img src="pktech.png" alt="" />
+          <div class="vertical">Pk Technical</div>
+        </div>
+        <div class="box4">
+          <img src="library.png" alt="" />
+          <div class="vertical">Collage Library</div>
+        </div>
+      </section>
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3><span>Lupesh kumar</span></h3>
+
+          <p class="footer-links">
+            <a href="https://www.govtexam.online" class="link-1">Home</a>
+
+            <a href="https://pktechgith.github.io/pktech3436">About</a>
+
+            <a href="https://pktechgith.github.io/pktech3436">Services</a>
+
+            <a href="https://pktechgith.github.io/pktech3436">Projects</a>
+
+            <a
+              href="https://api.whatsapp.com/qr/OGAPFILOR2MBA1?autoload=1&app_absent=0"
+              >Contact Me</a
+            >
+          </p>
+
+          <p class="footer-company-name">www.lupeshkumar © 2023</p>
+        </div>
+
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>my </span> Contact number</p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 9102674016</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+              <a href="mailto:support@company.com">lupeshkumar16@gmail.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>Lupesh Kumar</span>
+            hello users this my portfolio website 
+       
+          </p>
+
+          <div class="footer-icons">
+            <a href="link address"><img src="facebook.png" height="50PX" /></a>
+            <a
+              href="https://www.facebook.com/people/Pawan-Kumar-Thakur/100015277510797/?mibextid=ZbWKwL"
+              ><img src="instagram.jpg" height="50PX"
+            /></a>
+            <a href="https://www.instagram.com/pawankumarthakur534"
+              ><img src="youtube.png" height="50PX"
+            /></a>
+            <a href="https://www.youtube.com/channel/UC9O7aYmE5bEb1gXpRWAqo0w"
+              ><img src="linkdin.png" height="50PX"
+            /></a>
+        
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Video Editor",
+          "Web Designer",
+          "Photo Editor",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
